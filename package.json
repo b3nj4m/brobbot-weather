@@ -1,0 +1,23 @@
+{
+  "name": "brobbot-weather",
+  "version": "1.0.0",
+  "description": "a brobbot plugin for getting a weather forecast",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3nj4m/brobbot-weather.git"
+  },
+  "keywords": [
+    "brobbot",
+    "weather"
+  ],
+  "author": "Ben Robbins <ben.robbins@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b3nj4m/brobbot-weather/issues"
+  },
+  "homepage": "https://github.com/b3nj4m/brobbot-weather#readme"
+}
