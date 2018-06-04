@@ -4,6 +4,8 @@
   "description": "a brobbot plugin for getting a weather forecast",
   "main": "index.js",
   "scripts": {
+    "postversion": "git push origin master --tags && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/b3nj4m/brobbot-weather/issues"
   },
-  "homepage": "https://github.com/b3nj4m/brobbot-weather#readme"
+  "homepage": "https://github.com/b3nj4m/brobbot-weather#readme",
+  "peerDependencies": {
+    "brobbot": "4.x - 6.x"
+  }
 }
