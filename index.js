@@ -30,9 +30,9 @@ function get(url) {
 
 function geoCode(query) {
   return Promise.resolve().then(() => {
-    return get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${encodeURIComponent(BROBBOT_WEATHER_MAPBOX_KEY)}`)
+    return get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?access_token=${encodeURIComponent(BROBBOT_WEATHER_MAPBOX_KEY)}&limit=1`)
       .then((data) => {
-        const {center, text} = data.features.find((feature) => feature.place_type.includes('place'));
+        const {center, text} = data.features[0];
         return {center: center.reverse(), text};
       });
   });
