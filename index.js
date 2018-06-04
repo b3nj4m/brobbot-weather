@@ -61,8 +61,8 @@ const emojiIcons = {
   'wind': 'wind_blowing_face',
   'fog': 'fog',
   'cloudy': 'cloud',
-  'partly-cloudy-day': 'partly_cloudy',
-  'partly-cloudy-night': 'partly_cloudy',
+  'partly-cloudy-day': 'partly_sunny',
+  'partly-cloudy-night': 'partly_sunny',
   'tornado': 'tornado',
   'thunderstorm': 'lightning_cloud_and_rain',
   'hail': 'snow_cloud'
