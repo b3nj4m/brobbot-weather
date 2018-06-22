@@ -49,7 +49,7 @@ function forecast(place) {
 
 function forecastString(data) {
   const {currently, daily} = data.forecast;
-  return `currently ${currently.summary} ${emojiName(currently.icon)} ${currently.temperature}°F; ${daily.summary} ${emojiName(daily.icon)}`;
+  return `currently ${currently.summary} ${emojiName(currently.icon)} ${currently.temperature}°F; expected high ${daily.data[0].temperatureHigh}°F; ${daily.summary} ${emojiName(daily.icon)}`;
 }
 
 const emojiIcons = {
